@@ -1,0 +1,432 @@
+
+
+AVL:
+	 SORTED, 1000, INSERT: 0.000000205 sec./op, 0.205 microsec./op
+
+
+AVL:
+	 SORTED, 1000, SEARCH: 0.000000045 sec./op, 0.045 microsec./op
+
+
+AVL:
+	 SORTED, 1000, DELETE: 0.000000154 sec./op, 0.154 microsec./op
+
+
+SPLAY:
+	 SORTED, 1000, INSERT: 0.000000026 sec./op, 0.026 microsec./op
+
+
+SPLAY:
+	 SORTED, 1000, SEARCH: 0.000000017 sec./op, 0.017 microsec./op
+
+
+SPLAY:
+	 SORTED, 1000, DELETE: 0.000000033 sec./op, 0.033 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 1000, INSERT: 0.000000037 sec./op, 0.037 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 1000, SEARCH: 0.000000004 sec./op, 0.004 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 1000, DELETE: 0.000000031 sec./op, 0.031 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 1000, INSERT: 0.000000044 sec./op, 0.044 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 1000, SEARCH: 0.000000008 sec./op, 0.008 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 1000, DELETE: 0.000000037 sec./op, 0.037 microsec./op
+
+
+AVL:
+	 RANDOM, 1000, INSERT: 0.000000250 sec./op, 0.250 microsec./op
+
+
+AVL:
+	 RANDOM, 1000, SEARCH: 0.000000061 sec./op, 0.061 microsec./op
+
+
+AVL:
+	 RANDOM, 1000, DELETE: 0.000000230 sec./op, 0.230 microsec./op
+
+
+SPLAY:
+	 RANDOM, 1000, INSERT: 0.000000054 sec./op, 0.054 microsec./op
+
+
+SPLAY:
+	 RANDOM, 1000, SEARCH: 0.000000029 sec./op, 0.029 microsec./op
+
+
+SPLAY:
+	 RANDOM, 1000, DELETE: 0.000000024 sec./op, 0.024 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 1000, INSERT: 0.000000055 sec./op, 0.055 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 1000, SEARCH: 0.000000010 sec./op, 0.010 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 1000, DELETE: 0.000000036 sec./op, 0.036 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 1000, INSERT: 0.000000080 sec./op, 0.080 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 1000, SEARCH: 0.000000014 sec./op, 0.014 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 1000, DELETE: 0.000000055 sec./op, 0.055 microsec./op
+
+
+AVL:
+	 REVERSE, 1000, INSERT: 0.000000225 sec./op, 0.225 microsec./op
+
+
+AVL:
+	 REVERSE, 1000, SEARCH: 0.000000042 sec./op, 0.042 microsec./op
+
+
+AVL:
+	 REVERSE, 1000, DELETE: 0.000000155 sec./op, 0.155 microsec./op
+
+
+SPLAY:
+	 REVERSE, 1000, INSERT: 0.000000021 sec./op, 0.021 microsec./op
+
+
+SPLAY:
+	 REVERSE, 1000, SEARCH: 0.000000016 sec./op, 0.016 microsec./op
+
+
+SPLAY:
+	 REVERSE, 1000, DELETE: 0.000000039 sec./op, 0.039 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 1000, INSERT: 0.000000033 sec./op, 0.033 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 1000, SEARCH: 0.000000005 sec./op, 0.005 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 1000, DELETE: 0.000000026 sec./op, 0.026 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 1000, INSERT: 0.000000040 sec./op, 0.040 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 1000, SEARCH: 0.000000007 sec./op, 0.007 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 1000, DELETE: 0.000000040 sec./op, 0.040 microsec./op
+
+
+AVL:
+	 SORTED, 10000, INSERT: 0.000000240 sec./op, 0.240 microsec./op
+
+
+AVL:
+	 SORTED, 10000, SEARCH: 0.000000058 sec./op, 0.058 microsec./op
+
+
+AVL:
+	 SORTED, 10000, DELETE: 0.000000174 sec./op, 0.174 microsec./op
+
+
+SPLAY:
+	 SORTED, 10000, INSERT: 0.000000021 sec./op, 0.021 microsec./op
+
+
+SPLAY:
+	 SORTED, 10000, SEARCH: 0.000000017 sec./op, 0.017 microsec./op
+
+
+SPLAY:
+	 SORTED, 10000, DELETE: 0.000000041 sec./op, 0.041 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 10000, INSERT: 0.000000028 sec./op, 0.028 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 10000, SEARCH: 0.000000004 sec./op, 0.004 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 10000, DELETE: 0.000000023 sec./op, 0.023 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 10000, INSERT: 0.000000034 sec./op, 0.034 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 10000, SEARCH: 0.000000007 sec./op, 0.007 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 10000, DELETE: 0.000000024 sec./op, 0.024 microsec./op
+
+
+AVL:
+	 RANDOM, 10000, INSERT: 0.000000315 sec./op, 0.315 microsec./op
+
+
+AVL:
+	 RANDOM, 10000, SEARCH: 0.000000076 sec./op, 0.076 microsec./op
+
+
+AVL:
+	 RANDOM, 10000, DELETE: 0.000000274 sec./op, 0.274 microsec./op
+
+
+SPLAY:
+	 RANDOM, 10000, INSERT: 0.000000045 sec./op, 0.045 microsec./op
+
+
+SPLAY:
+	 RANDOM, 10000, SEARCH: 0.000000024 sec./op, 0.024 microsec./op
+
+
+SPLAY:
+	 RANDOM, 10000, DELETE: 0.000000024 sec./op, 0.024 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 10000, INSERT: 0.000000044 sec./op, 0.044 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 10000, SEARCH: 0.000000011 sec./op, 0.011 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 10000, DELETE: 0.000000030 sec./op, 0.030 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 10000, INSERT: 0.000000058 sec./op, 0.058 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 10000, SEARCH: 0.000000013 sec./op, 0.013 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 10000, DELETE: 0.000000038 sec./op, 0.038 microsec./op
+
+
+AVL:
+	 REVERSE, 10000, INSERT: 0.000000239 sec./op, 0.239 microsec./op
+
+
+AVL:
+	 REVERSE, 10000, SEARCH: 0.000000043 sec./op, 0.043 microsec./op
+
+
+AVL:
+	 REVERSE, 10000, DELETE: 0.000000168 sec./op, 0.168 microsec./op
+
+
+SPLAY:
+	 REVERSE, 10000, INSERT: 0.000000016 sec./op, 0.016 microsec./op
+
+
+SPLAY:
+	 REVERSE, 10000, SEARCH: 0.000000012 sec./op, 0.012 microsec./op
+
+
+SPLAY:
+	 REVERSE, 10000, DELETE: 0.000000035 sec./op, 0.035 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 10000, INSERT: 0.000000023 sec./op, 0.023 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 10000, SEARCH: 0.000000003 sec./op, 0.003 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 10000, DELETE: 0.000000019 sec./op, 0.019 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 10000, INSERT: 0.000000028 sec./op, 0.028 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 10000, SEARCH: 0.000000006 sec./op, 0.006 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 10000, DELETE: 0.000000020 sec./op, 0.020 microsec./op
+
+
+AVL:
+	 SORTED, 100000, INSERT: 0.000000246 sec./op, 0.246 microsec./op
+
+
+AVL:
+	 SORTED, 100000, SEARCH: 0.000000051 sec./op, 0.051 microsec./op
+
+
+AVL:
+	 SORTED, 100000, DELETE: 0.000000193 sec./op, 0.193 microsec./op
+
+
+SPLAY:
+	 SORTED, 100000, INSERT: 0.000000017 sec./op, 0.017 microsec./op
+
+
+SPLAY:
+	 SORTED, 100000, SEARCH: 0.000000014 sec./op, 0.014 microsec./op
+
+
+SPLAY:
+	 SORTED, 100000, DELETE: 0.000000027 sec./op, 0.027 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 100000, INSERT: 0.000000023 sec./op, 0.023 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 100000, SEARCH: 0.000000003 sec./op, 0.003 microsec./op
+
+
+HASH CHAIN:
+	 SORTED, 100000, DELETE: 0.000000022 sec./op, 0.022 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 100000, INSERT: 0.000000022 sec./op, 0.022 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 100000, SEARCH: 0.000000005 sec./op, 0.005 microsec./op
+
+
+HASH DOUBLE:
+	 SORTED, 100000, DELETE: 0.000000016 sec./op, 0.016 microsec./op
+
+
+AVL:
+	 RANDOM, 100000, INSERT: 0.000000303 sec./op, 0.303 microsec./op
+
+
+AVL:
+	 RANDOM, 100000, SEARCH: 0.000000087 sec./op, 0.087 microsec./op
+
+
+AVL:
+	 RANDOM, 100000, DELETE: 0.000000290 sec./op, 0.290 microsec./op
+
+
+SPLAY:
+	 RANDOM, 100000, INSERT: 0.000000035 sec./op, 0.035 microsec./op
+
+
+SPLAY:
+	 RANDOM, 100000, SEARCH: 0.000000018 sec./op, 0.018 microsec./op
+
+
+SPLAY:
+	 RANDOM, 100000, DELETE: 0.000000018 sec./op, 0.018 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 100000, INSERT: 0.000000045 sec./op, 0.045 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 100000, SEARCH: 0.000000007 sec./op, 0.007 microsec./op
+
+
+HASH CHAIN:
+	 RANDOM, 100000, DELETE: 0.000000033 sec./op, 0.033 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 100000, INSERT: 0.000000056 sec./op, 0.056 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 100000, SEARCH: 0.000000016 sec./op, 0.016 microsec./op
+
+
+HASH DOUBLE:
+	 RANDOM, 100000, DELETE: 0.000000030 sec./op, 0.030 microsec./op
+
+
+AVL:
+	 REVERSE, 100000, INSERT: 0.000000268 sec./op, 0.268 microsec./op
+
+
+AVL:
+	 REVERSE, 100000, SEARCH: 0.000000045 sec./op, 0.045 microsec./op
+
+
+AVL:
+	 REVERSE, 100000, DELETE: 0.000000181 sec./op, 0.181 microsec./op
+
+
+SPLAY:
+	 REVERSE, 100000, INSERT: 0.000000014 sec./op, 0.014 microsec./op
+
+
+SPLAY:
+	 REVERSE, 100000, SEARCH: 0.000000013 sec./op, 0.013 microsec./op
+
+
+SPLAY:
+	 REVERSE, 100000, DELETE: 0.000000031 sec./op, 0.031 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 100000, INSERT: 0.000000023 sec./op, 0.023 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 100000, SEARCH: 0.000000003 sec./op, 0.003 microsec./op
+
+
+HASH CHAIN:
+	 REVERSE, 100000, DELETE: 0.000000022 sec./op, 0.022 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 100000, INSERT: 0.000000020 sec./op, 0.020 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 100000, SEARCH: 0.000000005 sec./op, 0.005 microsec./op
+
+
+HASH DOUBLE:
+	 REVERSE, 100000, DELETE: 0.000000015 sec./op, 0.015 microsec./op
