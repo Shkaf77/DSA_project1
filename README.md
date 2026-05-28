@@ -38,19 +38,25 @@ Each structure supports:
 
 # Tested Scenarios
 
-The benchmark tests several input distributions:
+The benchmark tests several input distributions.
 
 ## Sorted Data
 
-text id="ygq46y" 1, 2, 3, 4, 5, ... 
+```text
+1, 2, 3, 4, 5, ...
+```
 
 ## Reverse Sorted Data
 
-text id="9w2n5j" n, n-1, n-2, ... 
+```text
+n, n-1, n-2, ...
+```
 
 ## Random Data
 
-text id="b8upbh" 3, 8, 1, 5, 2, ... 
+```text
+3, 8, 1, 5, 2, ...
+```
 
 These scenarios help analyze how different structures behave depending on input order.
 
@@ -60,20 +66,30 @@ These scenarios help analyze how different structures behave depending on input 
 
 The benchmark was executed with multiple dataset sizes:
 
-text id="qgwpk2" 1 000 10 000 20 000 40 000 60 000 80 000 100 000 
+```text
+1 000
+10 000
+20 000
+40 000
+60 000
+80 000
+100 000
+```
 
 ---
 
 # Measurement Methodology
 
-- Time is measured using clock()
+- Time is measured using `clock()`
 - Results are converted to microseconds per operation
 - Each test is repeated 10 times
 - Final values are averaged
 
 Formula:
 
-text id="on9dwb" time_per_operation = total_time / n 
+```text
+time_per_operation = total_time / n
+```
 
 ---
 
@@ -81,11 +97,15 @@ text id="on9dwb" time_per_operation = total_time / n
 
 Benchmark results are exported in CSV format:
 
-text id="tth5do" STRUCTURE,SCENARIO,N,OPERATION,TIME 
+```text
+STRUCTURE,SCENARIO,N,OPERATION,TIME
+```
 
 Example:
 
-text id="r6nmfx" AVL,SORTED,10000,INSERT,0.123 
+```text
+AVL,SORTED,10000,INSERT,0.123
+```
 
 ---
 
@@ -107,20 +127,24 @@ Separate graphs were created for:
 # Performance Summary
 
 ## AVL Tree
+
 - Stable O(log n)
 - Predictable performance
 - Not sensitive to input order
 
 ## Splay Tree
+
 - Adaptive structure
 - Fast repeated access
 - Sensitive to access patterns
 
 ## Hash Table (Chaining)
+
 - Average O(1)
 - Handles collisions robustly
 
 ## Hash Table (Double Hashing)
+
 - Memory efficient
 - Very fast for large datasets
 - Sensitive to load factor
@@ -131,13 +155,17 @@ Separate graphs were created for:
 
 Compile using GCC:
 
-bash id="uzpbhy" gcc main.c -o benchmark 
+```bash
+gcc main.c -o benchmark
+```
 
 ---
 
 # Run
 
-bash id="rpxyyg" ./benchmark 
+```bash
+./benchmark
+```
 
 ---
 
