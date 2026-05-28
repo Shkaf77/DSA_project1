@@ -1,150 +1,129 @@
-# ROBDD – Reduced Ordered Binary Decision Diagram in C
+# Data Structures Benchmark in C
 
 ## Author
-Dmytro Nitsenko
+Oleksandr Nitsenko
 
 ---
 
 # Project Description
 
-This project implements a Reduced Ordered Binary Decision Diagram (ROBDD) in the C programming language.
+This project benchmarks and compares the performance of several fundamental data structures implemented in C.
 
-The implementation supports:
-- recursive BDD construction,
-- node reduction,
-- duplicate subtree merging,
-- variable order optimization,
-- automatic testing with random Boolean expressions.
+The goal of the project is to analyze:
+- insertion performance,
+- search performance,
+- deletion performance,
+- behavior under different input scenarios,
+- scalability for increasing input sizes.
 
-The project was created as part of a Data Structures and Algorithms assignment.
-
----
-
-# Features
-
-- Create a BDD from a Boolean expression
-- Evaluate expressions using the BDD
-- Reduce duplicate nodes using a unique table
-- Optimize variable ordering
-- Automatic correctness testing
-- Memory cleanup
+The project was created as part of the Data Structures and Algorithms course.
 
 ---
 
-# Supported Boolean Expression Format
+# Implemented Data Structures
 
-The program supports Boolean expressions using:
+The following data structures are implemented:
 
-| Operator | Meaning |
-|---|---|
-| ! | NOT |
-| + | OR |
-| Concatenation | AND |
+- AVL Tree
+- Splay Tree
+- Hash Table (Separate Chaining)
+- Hash Table (Double Hashing)
 
-Examples:
-
-text AB+!C A!B+CD !A!B+C 
-
----
-
-# Example BDD Structure
-
-text         A       /   \      0     1     /       \    B         C   / \       / \  0   1     1   1 
-
-Each internal node represents a variable.
-Each branch corresponds to assigning 0 or 1.
-Terminal nodes contain the final result of the Boolean function.
+Each structure supports:
+- INSERT
+- SEARCH
+- DELETE
 
 ---
 
-# Main Functions
+# Tested Scenarios
 
-| Function | Description |
-|---|---|
-| BDD_create() | Creates a reduced BDD |
-| BDD_use() | Evaluates the BDD |
-| BDD_create_with_best_order() | Searches for a better variable order |
-| buildBDD() | Recursively constructs the BDD |
-| getUniqueNode() | Prevents duplicate nodes |
-| testBDD() | Tests correctness |
-| runTests() | Runs automatic tests |
+The benchmark tests several input distributions:
 
----
+## Sorted Data
 
-# ROBDD Reduction
+text id="ygq46y" 1, 2, 3, 4, 5, ... 
 
-The implementation performs reduction during construction.
+## Reverse Sorted Data
 
-Two reduction rules are used:
+text id="9w2n5j" n, n-1, n-2, ... 
 
-1. If:
-text low == high 
-the node is skipped.
+## Random Data
 
-2. If an identical node already exists:
-text same variable same low branch same high branch 
-the existing node is reused.
+text id="b8upbh" 3, 8, 1, 5, 2, ... 
 
-This creates a canonical reduced BDD.
+These scenarios help analyze how different structures behave depending on input order.
 
 ---
 
-# Variable Order Optimization
+# Benchmark Sizes
 
-The function:
+The benchmark was executed with multiple dataset sizes:
 
-c BDD_create_with_best_order() 
-
-tries multiple random variable orders.
-
-For each order:
-1. a BDD is created,
-2. the node count is measured,
-3. the smallest BDD is selected.
-
-Reduction percentage:
-
-text (normalNodes - bestNodes) / normalNodes * 100% 
+text id="qgwpk2" 1 000 10 000 20 000 40 000 60 000 80 000 100 000 
 
 ---
 
-# Testing
+# Measurement Methodology
 
-The project contains automatic randomized testing.
+- Time is measured using clock()
+- Results are converted to microseconds per operation
+- Each test is repeated 10 times
+- Final values are averaged
 
-The testing system:
-- generates random Boolean expressions,
-- creates normal and optimized BDDs,
-- evaluates all possible input combinations,
-- compares BDD results with direct expression evaluation.
+Formula:
 
----
-
-# Example Output
-
-text Manual test (AB+!C):  000 -> 1 001 -> 0 010 -> 1 011 -> 0  Random tests:  Test 1: A!B+CD | nodes normal = 45 best = 28 | reduction = 37.78% 
+text id="on9dwb" time_per_operation = total_time / n 
 
 ---
 
-# Complexity
+# Output Format
 
-## BDD Construction
+Benchmark results are exported in CSV format:
 
-Worst case complexity:
+text id="tth5do" STRUCTURE,SCENARIO,N,OPERATION,TIME 
 
-text O(2^n) 
+Example:
 
-where n is the number of variables.
+text id="r6nmfx" AVL,SORTED,10000,INSERT,0.123 
 
 ---
 
-## BDD Traversal
+# Graph Visualization
 
-BDD evaluation complexity:
+Graphs were generated using Python.
 
-text O(n) 
+Each graph contains:
+- X-axis → number of elements
+- Y-axis → time per operation (µs)
 
-because only one path from root to terminal node is traversed.
+Separate graphs were created for:
+- INSERT
+- SEARCH
+- DELETE
+
+---
+
+# Performance Summary
+
+## AVL Tree
+- Stable O(log n)
+- Predictable performance
+- Not sensitive to input order
+
+## Splay Tree
+- Adaptive structure
+- Fast repeated access
+- Sensitive to access patterns
+
+## Hash Table (Chaining)
+- Average O(1)
+- Handles collisions robustly
+
+## Hash Table (Double Hashing)
+- Memory efficient
+- Very fast for large datasets
+- Sensitive to load factor
 
 ---
 
@@ -152,13 +131,13 @@ because only one path from root to terminal node is traversed.
 
 Compile using GCC:
 
-bash gcc main.c -o bdd 
+bash id="uzpbhy" gcc main.c -o benchmark 
 
 ---
 
 # Run
 
-bash ./bdd 
+bash id="rpxyyg" ./benchmark 
 
 ---
 
@@ -166,14 +145,19 @@ bash ./bdd
 
 - C
 - Dynamic memory allocation
-- Recursion
-- ROBDD reduction
-- Randomized testing
+- AVL Trees
+- Splay Trees
+- Hash Tables
+- Benchmarking
+- CSV output
+- Python graph visualization
 
 ---
 
 # Conclusion
 
-This project successfully implements a Reduced Ordered Binary Decision Diagram in C.
+The benchmark demonstrates significant differences between balanced trees and hash tables.
 
-The optimized variable ordering significantly reduces the size of the resulting BDD in many cases while preserving correctness.
+Hash tables provide the best average-case performance for large datasets, while AVL trees offer the most stable and predictable behavior.
+
+The project also shows how input distribution can strongly affect the efficiency of certain data structures, especially self-adjusting trees such as Splay Trees.
