@@ -1,0 +1,21 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# IDE / editors
+.vscode/
+.idea/
+
+# C build files
+*.o
+*.out
+*.exe
+*.dSYM/
